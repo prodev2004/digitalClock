@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css?family=Great+Vibes&display=swap");
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Great Vibes', sans-serif;
+    color: rgb(105, 105, 105);
+}
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #e0e0e0;
+}
+span {
+    padding: 20px;
+    font-size: 3rem;
+    background: #e0e0e0;
+    box-shadow:  20px 20px 60px #a6a6a6,
+                -20px -20px 60px #ffffff;
+    border-radius: 15px;
+    margin: 0 10px;
+    position: relative;
+}
+span::before {
+    position: absolute;
+    bottom: -45%;
+    left: 2%;
+    font-size: 1.7rem;
+}
+.hours::before {
+    content: 'Hours';
+}
+.minutes::before {
+    content: 'Minutes';
+}
+.seconds::before {
+    content: 'Seconds';
+}
